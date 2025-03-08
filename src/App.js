@@ -1,22 +1,15 @@
+import Header from './Header';
+import Main from './Main';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className="app">
+      <Header />
 
-export default App;
+      <Main className='main'>
+        <p>1/15</p>
+        <p>Questions?</p>
+      </Main>
+    </div>
+  )
+}
